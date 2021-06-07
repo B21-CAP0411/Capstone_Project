@@ -1,8 +1,12 @@
 # How to Deploy ML with App Engine
 
+## Setup 
+
 gcloud auth list
 
 gcloud config list project
+
+## Clone Github
 
 git clone https://github.com/B21-CAP0411/Capstone_Project.git
 cd Capstone_Project/cloud-deploy
