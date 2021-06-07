@@ -24,4 +24,18 @@ source env/bin/activate
 
 pip install -r requirement.txt
 
+gcloud app create
+
 export CLOUD_STORAGE_BUCKET=${PROJECT_ID}
+
+gsutil mb gs://${PROJECT_ID}
+
+python main.py
+
+nano app.yaml
+
+gcloud config set app/cloud_build_timeout 1000
+
+gcloud app deploy
+
+https://medikaltech-316016.appspot.com
