@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="logo_onboard" type="id" />
+    <item name="welcometext" type="id" />
+    <item name="description" type="id" />
+    <item name="button_started" type="id" />
+</resources>

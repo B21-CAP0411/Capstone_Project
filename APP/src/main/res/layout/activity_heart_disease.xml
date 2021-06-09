@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:background="#E0FFF6"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E0FFF6"
+        tools:context=".HeartDisease">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello,"
+                android:textColor="@color/black2"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/tv_heart_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black2"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginLeft="10dp"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black2"
+            android:fontFamily="@font/poppinslight"
+            android:text="Please fill out this form!"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Do you ever feel pain on your chest?"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:id="@+id/rg_heartD_heartDisease"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <RadioButton
+                android:id="@+id/rb_heartD_heartDisease_yes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_heartDisease_no"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="No"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Specifically, how do you feel that pain? "
+            android:textSize="16sp" />
+        <RadioGroup
+            android:id="@+id/rg_heartD_cp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb_heartD_cp_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="In heart come with stress feeling"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_cp_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="In heart with no stress feeling"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_cp_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Don't feel anything"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hypertension"
+            android:textSize="16sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="fill here"
+                    android:id="@+id/edt_heartD_trestbps"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppinsregular"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_heartD_bloodPressure"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="fill here"
+                    android:fontFamily="@font/poppinsregular"/>
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Cholesterol levels"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_heartD_chol"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Blood sugar levels"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_heartD_fbs"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Electrocardiograph result"
+            android:textSize="16sp" />
+        <RadioGroup
+            android:id="@+id/rg_heartD_restecg"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb_heartD_restecg_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Normal"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_restecg_unknown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Unknown"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_restecg_abnormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Abnormalities in ST wave"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_restecg_penebalanJantung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Heart wall thickening"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Highest blood pressure"
+            android:textSize="16sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_heartD_thalach"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:hint="fill here"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppinsregular"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:hint="fill here"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"/>
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Feel pain on your chest when doing sport"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:id="@+id/rg_heartD_exang"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <RadioButton
+                android:id="@+id/rb_heartD_exang_yes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_exang_no"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="No"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+        </RadioGroup>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="ST Depression value"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_heartD_oldPeak"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ST Curve shape"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:id="@+id/rg_heartD_slope"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <RadioButton
+                android:id="@+id/rb_heartD_slope_openup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Open up"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_slope_opendown"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Open down"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_slope_flat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Flat"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Fluoroscopic staining of major blood vessel"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_heartD_ca"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Blood disorder"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:id="@+id/rg_heartD_thal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <RadioButton
+                android:id="@+id/rb_heartD_thal_normal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Normal"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_thal_genetic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Genetic"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+            <RadioButton
+                android:id="@+id/rb_heartD_thal_temporary"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Temporary"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black2"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_heart"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:text="See Lifestyle"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"/>
+    </LinearLayout>
+</ScrollView>

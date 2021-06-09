@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFF6"
+    android:orientation="vertical"
+    tools:context=".Lifestyle">
+
+    <ImageView
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_horizon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello,"
+            android:textColor="@color/black2"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/tv_lifestyle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black2"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/black2"
+        android:fontFamily="@font/poppinslight"
+        android:text="Below is the your current health!"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="2">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Diabetes:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_lifestyle_diabetesStat"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Loading..."
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="2">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stroke:"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_lifestyle_strokeStat"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Loading..."
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="2">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Heart Disease:"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_lifestyle_heaertDiseaseStat"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Loading..."
+            android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Recommendation:"
+        android:textSize="16sp" />
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ScrollView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tv_lifestyle_recommendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please wait..." />
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/pb_lifeStyle"
+            style="?android:attr/progressBarStyle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

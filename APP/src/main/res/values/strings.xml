@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MedikalTech</string>
+    <string name="app_description">where you can get healthy lifestyle recommendations</string>
+    <string name="diabetes_recommendation">
+        <b>Healthy Food</b>
+        Limit foods that are high in sugar
+        <b>Exercise</b>
+        30 minutes activities like walk, ride, and jogging
+        <b>Lifestyle:</b>
+        Manage Stress.
+        Stop smoking.
+        Watch your alcohol.
+    </string>
+    <string name="stroke_recommendation">
+        <b>Healthy Food:</b>
+        Ask your doctor, nurse or a licensed nutritionist or registered dietician for help.
+        Be aware of your special needs, especially if you have high blood pressure, high cholesterol or diabetes.
+        Avoid foods like fatty meats, butter and cream, which are high in saturated fat.
+        Eat moderate amounts of food and cut down on saturated fat, trans fat, sugar and salt.
+        Bake, broil, roast and boil foods instead of frying.
+        Read nutrition labels on packaged meals. Many are very high in sodium.
+        Limit alcohol to one drink a day for women; two drinks per day for men.
+        Eat more fruit, vegetables, whole-grains, dried peas and beans, pasta, fish, poultry and lean meats.
+        <b>Exercise:</b>
+        If you have a chronic medical condition, check with your doctor before you start.
+        Start slowly and build up to at least 150 minutes of moderate physical activity (such as brisk walking) a week. Or, you can do 75 minutes of vigorousintensity physical activity, or a combination of the two, to improve overall cardiovascular health.
+        Look for even small chances to be more active. Take the stairs instead of an elevator and park farther from your destination.
+        <b>Lifestyle:</b>
+        Don’t smoke and avoid second-hand smoke.
+        Improve your eating habits. Eat foods low in saturated fat, trans fat, sodium and added sugars.
+        Be physically active.
+        Take your medicine as directed.
+        Get your blood pressure checked regularly and work with your healthcare provider to manage it if it’s high.
+        Reach and maintain a healthy weight.
+        Decrease your stress level.
+        Seek emotional support when it’s needed.
+        Have regular medical checkups.
+    </string>
+    <string name="heartdisease_Recommendation">
+        <b>Healthy Food:</b>
+        Vegetables, fruits, and whole grains; includes low-fat dairy products, poultry, fish, legumes, nontropical vegetable oils, and nuts; and limits intake of sweets, sugar-sweetened beverages, and red meats.
+        <b>Exercise:</b>
+        150 minutes activity per week exercises like walk, ride, and jogging.
+        <b>Lifestyle:</b>
+        Stop smoking, manage diabetes, manage stress, limit alcohol.
+    </string>
+</resources>
